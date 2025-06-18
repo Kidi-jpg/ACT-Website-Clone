@@ -1,13 +1,88 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif ;
-    box-sizing: border-box;
-}
-.container{
-    width: 100%;
-    min-width: 100vh;
-   background: linear-gradient(135deg, #153677, #4e085f);
-   padding: 10px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body, html {
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+.hero {
+  background:  black;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 32px;
+  color: red;
+}
+
+.sign-in {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.content {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.email-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.email-form input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  max-width: 80%;
+}
+
+.email-form button {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
